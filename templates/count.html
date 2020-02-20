@@ -1,0 +1,18 @@
+<h1>Count</h1>
+text entered is : {{ text }}
+<br>
+there are {{ count }} words in the text
+<br>
+{{ mostapp }} appeared the most
+<br>
+<a href="{% url 'home' %}">START AGAIN</a>
+
+
+<br>
+<br>
+<br>
+<h1>Word count:</h1>
+{% for q,w in most %}
+{{q}} - {{w}}
+<br>
+{% endfor %}
